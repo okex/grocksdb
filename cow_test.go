@@ -1,4 +1,4 @@
-package grocksdb
+package gorocksdb
 
 import (
 	"fmt"

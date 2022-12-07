@@ -1,6 +1,7 @@
+//go:build !testing && jemalloc
 // +build !testing,jemalloc
 
-package grocksdb
+package gorocksdb
 
 // #include "rocksdb/c.h"
 import "C"

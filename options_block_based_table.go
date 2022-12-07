@@ -1,4 +1,4 @@
-package grocksdb
+package gorocksdb
 
 // #include "rocksdb/c.h"
 // #include "grocksdb.h"
