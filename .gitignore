@@ -17,3 +17,5 @@ libs/bzip2/bzip2.a
 libs/bzip2/libbz2.a
 build/*
 .vscode/c_cpp_properties.json
+
+.idea/
