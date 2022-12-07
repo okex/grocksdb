@@ -1,4 +1,4 @@
-package grocksdb
+package gorocksdb
 
 // #include <stdlib.h>
 // #include "rocksdb/c.h"
@@ -183,9 +183,12 @@ func OpenDbColumnFamilies(
 // Get/Iterator may return expired entries(compaction not run on them yet)
 // Different TTL may be used during different Opens
 // Example: Open1 at t=0 with ttl=4 and insert k1,k2, close at t=2
-//          Open2 at t=3 with ttl=5. Now k1,k2 should be deleted at t>=5
+//
+//	Open2 at t=3 with ttl=5. Now k1,k2 should be deleted at t>=5
+//
 // read_only=true opens in the usual read-only mode. Compactions will not be
-//  triggered(neither manual nor automatic), so no expired entries removed
+//
+//	triggered(neither manual nor automatic), so no expired entries removed
 //
 // CONSTRAINTS:
 // Not specifying/passing or non-positive TTL behaves like TTL = infinity
@@ -895,9 +898,12 @@ func (db *DB) CreateColumnFamily(opts *Options, name string) (handle *ColumnFami
 // Get/Iterator may return expired entries(compaction not run on them yet)
 // Different TTL may be used during different Opens
 // Example: Open1 at t=0 with ttl=4 and insert k1,k2, close at t=2
-//          Open2 at t=3 with ttl=5. Now k1,k2 should be deleted at t>=5
+//
+//	Open2 at t=3 with ttl=5. Now k1,k2 should be deleted at t>=5
+//
 // read_only=true opens in the usual read-only mode. Compactions will not be
-//  triggered(neither manual nor automatic), so no expired entries removed
+//
+//	triggered(neither manual nor automatic), so no expired entries removed
 //
 // CONSTRAINTS:
 // Not specifying/passing or non-positive TTL behaves like TTL = infinity

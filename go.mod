@@ -1,4 +1,4 @@
-module github.com/linxGnu/grocksdb
+module github.com/linxGnu/gorocksdb
 
 require github.com/stretchr/testify v1.7.0
 

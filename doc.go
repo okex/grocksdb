@@ -1,5 +1,5 @@
 /*
-Package grocksdb provides the ability to create and access RocksDB databases.
+package gorocksdb provides the ability to create and access RocksDB databases.
 
 grocksdb.OpenDb opens and creates databases.
 
@@ -78,4 +78,4 @@ This documentation is not a complete discussion of RocksDB. Please read the
 RocksDB documentation <http://rocksdb.org/> for information on its
 operation. You'll find lots of goodies there.
 */
-package grocksdb
+package gorocksdb
